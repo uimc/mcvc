@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+/*--------------- toggle colors ---------------*/
+:root[data-applied-mode="light"] {
+  color-scheme: light;
+  --text: #0f0f0f;
+  --text2: #0f0f0f;
+  --background: #fffff0;
+  --bordercolor: #0f0f0f;
+}
+:root[data-applied-mode="dark"] {
+  color-scheme: dark;
+  --text: #C0C0C0;
+  --text2: #fffff0;
+  --background: #141414;
+  --bordercolor: transparent;
+}
+body {
+  font-family: 'Varela Round', sans-serif;
+  font-size: 16px;
+  background-color: var(--background);
+  color: var(--text);
+}
+.mode-bold {
+  font-weight: 600;
+  color: var(--text2);
+}
+.mode-img {
+  border-color: var(--bordercolor);
+}
+.mode-link {
+  font-weight: 600;
+  color: var(--text2);
+}
+.mode-link:hover {
+  color: var(--background);
+  background-color: var(--text2);
+}
+/*------------- end toggle colors -------------*/
+html {
+  overflow-y: scroll;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  padding: 0;
+  margin-bottom: 0;
+}
+li {
+  display: inline-block;
+}
+ul li { /* spacing for nav icons */
+  margin-left: 2px;
+}
+.nav-item { /* spacing for nav items that are words */
+  margin-right: 10px;
+}
+li i {
+  font-size: 22px;
+}
+.nav-burger {
+  font-size: 24px;
+}
+li span {
+  font-size: 16px;
+}
+.show li {
+  margin-top: 10px;
+}
+.collapsing li {
+  margin-top: 10px;
+}
+.bi {
+  padding: 2px 4px 0 4px;
+}
+.navbar-adds { /* spacing and color design of navbar background */
+  padding: 20px 0 10px 0;
+  background-color: inherit;
+}
+.nav2 {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-connect {
+  border-radius: 10px;
+  border: none;
+  padding: 6px 18px;
+  font-size: 12px;
+}
+.btn-burger {
+  border: 0;
+  padding: 0;
+}
+.lower-icons {
+  font-size: 20px;
+  margin: 0;
+}
+.sub-text {
+  font-size: 12px;
+  font-style: italic;
+  font-weight: 600;
+}
+.img-title {
+  font-size: 18px;
+}
+#footer {
+  font-size: 14px;
+  text-decoration: none;
+}
+#pfp {
+  width: 150px;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 10px;
+  /*filter: grayscale(100%);*/
+}
+#pjp-sqr {
+  max-width: 220px;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 10px;
+  /*filter: grayscale(100%);*/
+}
+#pjp-wide {
+  max-width: 350px;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 10px;
+  /*filter: grayscale(100%);*/
+}
+@media screen and (max-width: 768px) {
+  #pjp-wide {
+    max-width: 90%;
+  }
+  #pjp-sqr {
+    max-width: 50%;
+  }
+}
